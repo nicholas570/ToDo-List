@@ -21,5 +21,14 @@ document.getElementById('time').innerHTML = time;
 
 // Add a task to the list
 
-const taskToAdd = document.getElementById('taskToAdd').value;
-console.log(taskToAdd);
+
+const appendToTheList = () => {
+    const list = document.createElement('li');
+    const taskToAdd = document.getElementById('taskToAdd').value;
+    const task = document.createTextNode(taskToAdd);
+    list.appendChild(task);
+    document.getElementById('list').appendChild(list);
+};
+
+
+

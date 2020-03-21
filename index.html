@@ -33,7 +33,7 @@
                     <input id="taskToAdd" type="text" class="form-control" placeholder="Task to do"
                         aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-info" type="button">Add</button>
+                        <button class="btn btn-outline-info" type="button" id="button" onclick="appendToTheList()">Add</button>
                     </div>
                 </div>
             </form>
@@ -42,14 +42,9 @@
         <!---------- Tables ---------->
 
         <article>
-            <table class="table table-striped">
-                <thead>To do</thead>
-                <tbody>
-                    <tr>
-                        
-                    </tr>
-                </tbody>
-            </table>
+            <ul id="list">
+                
+            </ul>
         </article>
 
     </main>
