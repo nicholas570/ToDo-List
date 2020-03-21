@@ -23,10 +23,22 @@ document.getElementById('time').innerHTML = time;
 
 
 const appendToTheList = () => {
+    // create a js li
     const list = document.createElement('li');
+
+    // add input value to the list
     const taskToAdd = document.getElementById('taskToAdd').value;
     const task = document.createTextNode(taskToAdd);
     list.appendChild(task);
+
+    // create an "x" to remove the task
+    const done = document.createElement('span');
+    done.className = 'done';
+    const doneCross = document.createTextNode('x');
+    done.appendChild(doneCross)
+    list.appendChild(done);
+
+    // send it in the HTML
     document.getElementById('list').appendChild(list);
 };
 
