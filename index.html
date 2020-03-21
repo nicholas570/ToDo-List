@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <title>My daily ToDo List</title>
 </head>
 
@@ -16,36 +17,45 @@
 
     <!-------- Header ---------->
 
-    <header>
-        <h1>Hello Nicolas!</h1>
-        <h2 id="greetings"></h2>
-        <time id="time"></time>
+    <header class="flex">
+        <div class="flex" id="welcome">
+            <h1>Hello Nicolas!</h1>
+            <h2 id="greetings"></h2>
+        </div>
     </header>
 
     <main>
-        <h3>My daily ToDo List</h3>
+        <div class="flex" id="bannerDiv">
+            <div id="banner" class="flex">
+                <h3>My daily ToDo List</h3>
+                <time id="time"></time>
+            </div>
+        </div>
 
         <!---------- Addbar ---------->
 
-        <article>
-            <form action="">
+        <div class="flex" id="addBarDiv">
+            <article id="addBar" class="flex">
                 <div class="input-group mb-3">
                     <input id="taskToAdd" type="text" class="form-control" placeholder="Task to do"
                         aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-info" type="button" id="button" onclick="appendToTheList()">Add</button>
+                        <button class="btn btn-outline-info" type="button" id="button"
+                            onclick="appendToTheList()">Add</button>
                     </div>
                 </div>
-            </form>
-        </article>
+            </article>
+        </div>
 
-        <!---------- Tables ---------->
+        <!---------- List ---------->
 
-        <article>
-            <ul id="list">
-                
-            </ul>
-        </article>
+        <div class="flex" id="listDiv">
+            <article class="flex">
+                <ol id="list" class="flex">
+
+                </ol>
+            </article>
+        </div>
 
     </main>
 

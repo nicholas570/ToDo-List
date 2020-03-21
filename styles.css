@@ -1,4 +1,65 @@
-.done{
-    margin-left: 30px;
-    border: black 2px solid;
+:root{
+
+    /*---------- font ----------*/
+    --font: 'Varela Round', sans-serif;
+    --header-font-size: 3rem;
+
+    /*---------- header ----------*/
+    --header-width: 50%;
+    --header-height: 30vh;
+
+    /*---------- article ----------*/
+    --article-width: 50%;
+
+    /*---------- list ----------*/
+    --list-width: 100%;
+
+
+}
+/*-------- GENERAL --------*/
+
+article{
+    width: var(--article-width);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+/*-------- HEADER --------*/
+
+#welcome{
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: var(--font);
+}
+
+#welcome h1, h2{
+    font-size: var(--header-font-size);
+}
+
+/*-------- BANNER --------*/
+
+#banner{
+    justify-content: space-around; 
+    width: var(--article-width);
+    text-align: center;
+}
+
+/*-------- ADDBAR --------*/
+
+
+/*-------- LIST --------*/
+
+ol{
+    padding-left: 0;
+    flex-direction: column;
+    width: var(--list-width);
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    width: var(--list-width);
 }
