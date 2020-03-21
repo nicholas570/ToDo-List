@@ -21,7 +21,6 @@ document.getElementById('time').innerHTML = time;
 
 // Add a task to the list
 
-
 const appendToTheList = () => {
     // create a js li
     const list = document.createElement('li');
@@ -31,9 +30,9 @@ const appendToTheList = () => {
     const task = document.createTextNode(taskToAdd);
     list.appendChild(task);
 
-    // create an "x" to remove the task
-    const done = document.createElement('span');
-    done.className = 'done';
+    // create a button to remove the task
+    const done = document.createElement('button');
+    done.className = 'btn btn-danger';
     const doneCross = document.createTextNode('x');
     done.appendChild(doneCross)
     list.appendChild(done);
@@ -41,6 +40,13 @@ const appendToTheList = () => {
     // send it in the HTML
     document.getElementById('list').appendChild(list);
 };
+
+// Remove a task from the list
+
+
+
+
+
 
 
 
