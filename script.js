@@ -18,20 +18,19 @@ const minute = new Date().getMinutes();
 const time = `${hour}:${minute}`;
 document.getElementById('time').innerHTML = time;
 
-// Remove a task from the list
-
-
 
 // Add a task to the list
 
 const appendToTheList = () => {
     // create a js li
     const list = document.createElement('li');
+    const span = document.createElement('span');
 
     // add input value to the list
     const taskToAdd = document.getElementById('taskToAdd').value;
     const task = document.createTextNode(taskToAdd);
-    list.appendChild(task);
+    span.appendChild(task)
+    list.appendChild(span);
 
     // create a button to remove the task
     const done = document.createElement('button');

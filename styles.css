@@ -7,6 +7,7 @@
     /*---------- header ----------*/
     --header-width: 50%;
     --header-height: 30vh;
+    --header-margin: 3rem 0rem 3rem 0rem;
 
     /*---------- article ----------*/
     --article-width: 50%;
@@ -21,12 +22,17 @@
 article{
     width: var(--article-width);
 }
+
 .flex{
     display: flex;
     justify-content: center;
 }
 
 /*-------- HEADER --------*/
+
+header{
+    margin: var(--header-margin);
+}
 
 #welcome{
     flex-direction: column;
@@ -40,11 +46,18 @@ article{
 }
 
 /*-------- BANNER --------*/
+#bannerDiv{
+    margin-bottom: 3rem;
+}
 
 #banner{
     justify-content: space-around; 
     width: var(--article-width);
     text-align: center;
+}
+
+time{
+    margin-top: 0.6rem;
 }
 
 /*-------- ADDBAR --------*/
@@ -56,10 +69,16 @@ ol{
     padding-left: 0;
     flex-direction: column;
     width: var(--list-width);
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 li{
     display: flex;
     justify-content: space-between;
     width: var(--list-width);
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+li span{
+    margin-top: 0.5rem;
 }
