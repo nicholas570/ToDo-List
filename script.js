@@ -18,6 +18,9 @@ const minute = new Date().getMinutes();
 const time = `${hour}:${minute}`;
 document.getElementById('time').innerHTML = time;
 
+// Remove a task from the list
+
+
 
 // Add a task to the list
 
@@ -33,6 +36,7 @@ const appendToTheList = () => {
     // create a button to remove the task
     const done = document.createElement('button');
     done.className = 'btn btn-danger';
+    done.setAttribute('onclick', "this.parentNode.style.display='none'");
     const doneCross = document.createTextNode('x');
     done.appendChild(doneCross)
     list.appendChild(done);
@@ -41,7 +45,10 @@ const appendToTheList = () => {
     document.getElementById('list').appendChild(list);
 };
 
-// Remove a task from the list
+
+
+
+
 
 
 
